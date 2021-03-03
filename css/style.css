@@ -25,15 +25,19 @@ body {
 }
 .left a {
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 19.95% 1% 79.95%;
   margin: 5% 5%;
   text-align: center;
   background-color: brown;
   border-radius: 0.3em;
 }
-.left a:nth-child(n) :nth-child(n + 1):nth-child(-n + 2) {
-  padding: 1.3rem;
-  font-size: 2rem;
+.left a:nth-child(n) :nth-child(n + 1):nth-child(-n + 3) {
+  padding: 1.4rem;
+  font-size: 1.8rem;
+}
+.left a:nth-child(n) :nth-child(2) {
+  border-left: 1px solid black;
+  margin: 1rem 0;
 }
 /* middel */
 .middle {
@@ -51,7 +55,7 @@ body {
   grid-column: 1 / 4;
   border-top: 1px solid black;
 }
-.footer:nth-child(n) :nth-child(n + 1):nth-child(-n + 1) {
+.footer:nth-child(n) :nth-child(1) {
   text-align: right;
 }
 .footer:nth-child(n) :nth-child(n + 1):nth-child(-n + 3) {
