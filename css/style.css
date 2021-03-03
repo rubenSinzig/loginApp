@@ -26,7 +26,7 @@ body {
 .left a {
   display: grid;
   grid-template-columns: 19.95% 1% 79.95%;
-  margin: 5% 5%;
+  margin: 1em 2em 1em 1em;
   text-align: center;
   background-color: brown;
   border-radius: 0.3em;
@@ -42,6 +42,20 @@ body {
 /* middel */
 .middle {
   border: 0.5px solid black;
+  margin: 3em 0;
+}
+.middle div {
+  position: absolute;
+  background-color: white;
+  width: 4em;
+  height: 4em;
+  top: 19em;
+  left: 43.75em;
+  text-align: center;
+  padding: 1.25rem 0;
+  font-weight: bolder;
+  border: 1px solid black;
+  border-radius: 50%;
 }
 /* login form right */
 .right {
