@@ -8,11 +8,12 @@ body {
   height: 100vh;
 }
 .box {
-  border: 2px dashed blue;
-  width: 50%;
-  height: 50%;
+  border: 1px solid black;
+  width: 60%;
+  height: 60%;
   display: grid;
   grid-template-columns: 3fr 1fr 3fr;
+  grid-template-rows: 90% 10%;
   margin: 8em auto;
 }
 .left {
@@ -26,4 +27,19 @@ body {
 .right {
   border: 2px dashed red;
   margin: 1em;
+}
+.footer {
+  display: grid;
+  grid-template-columns: 49.5% 1% 49.5%;
+  grid-column: 1 / 4;
+  border-top: 1px solid black;
+}
+.footer:nth-child(n) :nth-child(n + 1):nth-child(-n + 1) {
+  text-align: right;
+}
+.footer:nth-child(n) :nth-child(n + 1):nth-child(-n + 3) {
+  margin: 0.8em 0.2em;
+}
+article {
+  border: 1.5px solid black;
 }
