@@ -39,6 +39,7 @@ body {
   text-decoration: none;
   color: silver;
   font-size: 200%;
+  font-weight: bold;
 }
 .left a:nth-child(n) :nth-child(1) {
   border-right: 1px solid silver;
@@ -74,7 +75,7 @@ body {
   color: rgb(67, 84, 100);
 }
 .right legend {
-  font-size: 1.5em;
+  font-size: 1.8em;
   margin-top: 10%;
 }
 .right:nth-child(n) :nth-child(n + 2):nth-child(-n + 3) {
@@ -93,17 +94,22 @@ body {
   border-top: 1px solid rgb(67, 84, 100);
   margin: 0 25px;
   align-content: center;
+  background-color: rgb(67, 84, 100, 0.1);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 .footer:nth-child(n) :nth-child(1),
 .footer:nth-child(n) :nth-child(3) {
   text-decoration: none;
-  margin: 8px;
-  width: 6em;
-  height: 1.2em;
-  border: 1px dashed red;
-  text-align: center;
+  margin: 15px;
+  color: rgb(67, 84, 100);
+  font-weight: bold;
 }
 .footer:nth-child(n) :nth-child(2) {
   border-right: 1px solid rgb(67, 84, 100);
   margin: 6px 0;
+}
+.footer:nth-child(n) :nth-child(1) {
+  text-align: end;
+  margin-right: 0;
 }
