@@ -21,7 +21,7 @@ body {
   width: 55vw;
   height: 60vh;
   background-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0px 0px 25px rgba(209, 209, 209, 0.7);
+  box-shadow: 0px 0px 25px rgba(71, 71, 71, 0.7);
   display: grid;
   grid-template-columns: 49% 2% 49%;
   grid-template-rows: 90% 10%;
@@ -75,30 +75,38 @@ body {
 }
 /* login form right */
 .right {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
+  width: 27vw;
+  height: 54vh;
+  display: grid;
   align-items: center;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
 }
 .right:nth-child(n) :nth-child(n + 1):nth-child(-n + 6) {
-  margin-bottom: 10%;
   color: #130a3f;
 }
 .right legend {
   font-size: 1.8em;
-  margin-top: 10%;
   text-decoration: overline solid 2px;
 }
-.right:nth-child(n) :nth-child(n + 2):nth-child(-n + 3) {
-  width: 70%;
-  height: 10%;
-  border-style: none;
-  font-size: 100%;
-  border-radius: 5px;
+.input {
+  width: 17vw;
+  height: 5vh;
+  border-bottom: 1px solid #130a3f;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
-.right div:nth-child(n) :nth-child(n + 1):nth-child(-n + 3) {
-  margin: 0 5px;
-  font-size: 1.1em;
+.input input {
+  width: 15vw;
+  height: 5vh;
+  font-size: 1.2rem;
+  border-style: none;
+  background-color: transparent;
+}
+.input input::placeholder {
+  color: rgba(16, 9, 62, 0.7);
 }
 .button {
   width: 5em;
@@ -106,6 +114,10 @@ body {
   background-color: rgba(16, 9, 62, 0.4);
   border-style: solid;
   border-radius: 4px;
+  font-size: 1rem;
+}
+.right:nth-child(n) :nth-child(4) {
+  display: inline-block;
 }
 /* footer */
 .footer {
@@ -128,7 +140,7 @@ body {
 }
 .footer:nth-child(n) :nth-child(2) {
   border-right: 1px solid #130a3f;
-  margin: 6px 0;
+  margin: 10px 0;
 }
 .footer:nth-child(n) :nth-child(1) {
   text-align: end;
