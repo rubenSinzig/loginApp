@@ -28,27 +28,36 @@ body {
 }
 /* login button left (facebook, google and twitter) */
 .left {
+  width: 28vw;
+  height: 54vh;
   display: grid;
+  align-items: center;
+  justify-content: center;
 }
 .left a {
-  width: 70%;
-  height: 20%;
+  width: 16vw;
+  height: 9vh;
   border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: start;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  grid-template-columns: 1fr 2fr;
   text-decoration: none;
   color: rgb(255, 255, 255);
-  font-size: 100%;
-  font-weight: bold;
 }
 .left a:nth-child(n) :nth-child(1) {
+  width: 4vw;
+  height: 5.5vh;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  font-size: 1.9rem;
   border-right: 1px solid rgb(255, 255, 255);
-  padding-right: 20px;
-  padding-left: 20px;
 }
 .left a:nth-child(n) :nth-child(2) {
-  padding-left: 20px;
+  align-self: center;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 .facebook {
   background-color: #0c5dd6;
